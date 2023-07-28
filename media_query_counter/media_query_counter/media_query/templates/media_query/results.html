@@ -1,0 +1,27 @@
+<!-- media_query/templates/media_query/results.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Queries Results</title>
+</head>
+<body>
+    <h1>Media Queries Results</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>URL</th>
+                <th>Media Queries Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in results %}
+            <tr>
+                <td>{{ result.url }}</td>
+                <td>{{ result.media_queries_count }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

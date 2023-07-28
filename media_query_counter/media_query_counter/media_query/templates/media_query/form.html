@@ -1,0 +1,15 @@
+<!-- media_query/templates/media_query/form.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Count Media Queries</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <textarea name="urls" rows="5" cols="50" placeholder="Enter URLs, one per line"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
